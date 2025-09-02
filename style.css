@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('bg.png') no-repeat center center/cover;
+  transition: background 0.5s, color 0.5s;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #6a5acd, #ff7f50);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ff7f50, #6a5acd);
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #444;
+  color: white;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #fff;
+}
+
+body.dark .login-box {
+  background: rgba(30, 30, 30, 0.95);
+}
+
+body.dark input {
+  background: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
