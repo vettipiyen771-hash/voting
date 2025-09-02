@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Online Voting system</title>
+  <title>Aadhaar Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Dark/Light Mode Button -->
   <button class="theme-toggle" id="toggleTheme">🌙 Dark Mode</button>
 
+  <!-- Login Box -->
   <div class="login-box">
     <h2>Aadhaar Login</h2>
     <form id="loginForm" action="save.php" method="POST">
@@ -19,13 +21,14 @@
     </form>
   </div>
 
+  <!-- Script -->
   <script>
     const form = document.getElementById('loginForm');
     const aadhaarInput = document.getElementById('aadhaar');
     const errorMsg = document.getElementById('errorMsg');
     const toggleBtn = document.getElementById('toggleTheme');
 
-    // Client-side validation
+    // Aadhaar & password validation
     form.addEventListener('submit', function(e) {
       const aadhaar = aadhaarInput.value.trim();
       const password = document.getElementById('password').value.trim();
